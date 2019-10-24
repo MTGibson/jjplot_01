@@ -1,13 +1,9 @@
-#' Add bbc theme to ggplot chart
+#' This code can be used to style graphics according to J-PAL guidelines. It is heavily inspired
+#' and sourced from bbplot (see https://github.com/bbc/bbplot)
+#' 
+#'   Add jpal theme to ggplot chart
 #'
-#' This function allows you to add the bbc theme to your ggplotgraphics.
-#' @keywords bbc_style
-#' @export
-#' @examples
-#' line <- ggplot(line_df, aes(x = year, y = lifeExp)) +
-#' geom_line(colour = "#007f7f", size = 1) +
-#' geom_hline(yintercept = 0, size = 1, colour="#333333") +
-#' bbc_style()
+#
 
 bbc_style <- function() {
   font <- "Helvetica"
