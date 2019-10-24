@@ -2,22 +2,27 @@
 #' and sourced from bbplot (see https://github.com/bbc/bbplot)
 #' 
 #'   Add jpal theme to ggplot chart
-#'
+#' Notes:
+#' -You will need to install the Perpetua, Century Gothic and Futura Fonts to your computer.
+#' To check if you already have these fonts installed, you can use the R package
+#' "extrafontdb" function fonts() which will list all fonts installed on your computer.
+#' 
 #
 
-bbc_style <- function() {
-  font <- "Helvetica"
+jpal_style <- function() {
+  title_font <- "Futura"
+  nontitle_font<-"Perpetua"
   
   ggplot2::theme(
     
     #Text format:
     #This sets the font, size, type and colour of text for the chart's title
-    plot.title = ggplot2::element_text(family=font,
+    plot.title = ggplot2::element_text(family=title_font,
                                        size=28,
                                        face="bold",
                                        color="#222222"),
     #This sets the font, size, type and colour of text for the chart's subtitle, as well as setting a margin between the title and the subtitle
-    plot.subtitle = ggplot2::element_text(family=font,
+    plot.subtitle = ggplot2::element_text(family=nontitle_font,
                                           size=22,
                                           margin=ggplot2::margin(9,0,9,0)),
     plot.caption = ggplot2::element_blank(),
@@ -30,14 +35,14 @@ bbc_style <- function() {
     legend.background = ggplot2::element_blank(),
     legend.title = ggplot2::element_blank(),
     legend.key = ggplot2::element_blank(),
-    legend.text = ggplot2::element_text(family=font,
+    legend.text = ggplot2::element_text(family=nontitle_font,
                                         size=18,
                                         color="#222222"),
     
     #Axis format
     #This sets the text font, size and colour for the axis test, as well as setting the margins and removes lines and ticks. In some cases, axis lines and axis ticks are things we would want to have in the chart - the cookbook shows examples of how to do so.
     axis.title = ggplot2::element_blank(),
-    axis.text = ggplot2::element_text(family=font,
+    axis.text = ggplot2::element_text(family=nontitle_font,
                                       size=18,
                                       color="#222222"),
     axis.text.x = ggplot2::element_text(margin=ggplot2::margin(5, b = 10)),
