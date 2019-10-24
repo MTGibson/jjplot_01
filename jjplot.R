@@ -12,6 +12,11 @@
 jpal_style <- function() {
   title_font <- "Century Gothic"
   nontitle_font<-"Perpetua"
+  jpal_orange <- "#E35925"
+  jpal_teal <- "#2FAA9F" 
+  jpal_green <- "#61b77f"
+  jpal_blue <- "#2d616e"
+  jpal_yellow <- "#F2C200"
   
   ggplot2::theme(
     

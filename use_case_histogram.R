@@ -12,11 +12,11 @@ pacman::p_load('dplyr', 'tidyr', 'gapminder',
                'gmodels', 'beepr','ggmap','maptools','maps')
 
 #J-PAL Colors:
-c_orange <- "#E35925"
-c_teal <- "#2FAA9F" 
-c_green <- "#61b77f"
-c_blue <- "#2d616e"
-c_yellow <- "#F2C200"
+jpal_orange <- "#E35925"
+jpal_teal <- "#2FAA9F" 
+jpal_green <- "#61b77f"
+jpal_blue <- "#2d616e"
+jpal_yellow <- "#F2C200"
 
 test_school_data_fake <- read_excel("test_school_data_fake.xlsx")
 
