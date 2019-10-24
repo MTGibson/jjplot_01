@@ -10,7 +10,7 @@
 #
 
 jpal_style <- function() {
-  title_font <- "Futura"
+  title_font <- "Century Gothic"
   nontitle_font<-"Perpetua"
   
   ggplot2::theme(
@@ -18,12 +18,12 @@ jpal_style <- function() {
     #Text format:
     #This sets the font, size, type and colour of text for the chart's title
     plot.title = ggplot2::element_text(family=title_font,
-                                       size=28,
-                                       face="bold",
+                                       size=24,
+#                                       face="bold",
                                        color="#222222"),
     #This sets the font, size, type and colour of text for the chart's subtitle, as well as setting a margin between the title and the subtitle
     plot.subtitle = ggplot2::element_text(family=nontitle_font,
-                                          size=22,
+                                          size=18,
                                           margin=ggplot2::margin(9,0,9,0)),
     plot.caption = ggplot2::element_blank(),
     #This leaves the caption text element empty, because it is set elsewhere in the finalise plot function
@@ -36,14 +36,14 @@ jpal_style <- function() {
     legend.title = ggplot2::element_blank(),
     legend.key = ggplot2::element_blank(),
     legend.text = ggplot2::element_text(family=nontitle_font,
-                                        size=18,
+                                        size=16,
                                         color="#222222"),
     
     #Axis format
     #This sets the text font, size and colour for the axis test, as well as setting the margins and removes lines and ticks. In some cases, axis lines and axis ticks are things we would want to have in the chart - the cookbook shows examples of how to do so.
     axis.title = ggplot2::element_blank(),
     axis.text = ggplot2::element_text(family=nontitle_font,
-                                      size=18,
+                                      size=16,
                                       color="#222222"),
     axis.text.x = ggplot2::element_text(margin=ggplot2::margin(5, b = 10)),
     axis.ticks = ggplot2::element_blank(),
