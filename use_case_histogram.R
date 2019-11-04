@@ -12,7 +12,7 @@ pacman::p_load('dplyr', 'tidyr', 'gapminder',
                'gmodels', 'beepr','ggmap','maptools','maps')
 
 #J-PAL Colors:
-
+setwd("~/Desktop/jjplot_01")
 
 test_school_data_fake <- read_excel("test_school_data_fake.xlsx")
 
