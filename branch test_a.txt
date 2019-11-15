@@ -1,0 +1,3 @@
+next steps: work on creating an R package together over the next two weeks
+Play around on GitHub and get more proficient
+Use balsa khi data to make some example graphs
